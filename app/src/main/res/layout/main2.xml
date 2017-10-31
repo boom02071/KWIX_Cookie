@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main2">
+
+        <ScrollView
+            android:layout_height="495dp"
+            android:layout_width="368dp"
+            tools:layout_editor_absoluteY="8dp"
+            tools:layout_editor_absoluteX="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="345dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="8dp">
+
+                        <Button
+                            android:id="@+id/MenuKorean"
+                            android:layout_width="wrap_content"
+                            android:layout_height="31dp"
+                            android:background="@drawable/btn_bg"
+                            android:textColor="#FFF43E02"
+                            android:text="#한식"
+                            android:layout_marginRight="10dp"/>
+
+                        <Button
+                            android:id="@+id/MenuWestern"
+                            android:layout_width="wrap_content"
+                            android:layout_height="31dp"
+                            android:background="@drawable/btn_bg"
+                            android:textColor="#FFF43E02"
+                            android:text="#양식"
+                            android:layout_marginRight="10dp"/>
+
+                        <Button
+                            android:id="@+id/MenuChicken"
+                            android:layout_width="wrap_content"
+                            android:layout_height="31dp"
+                            android:background="@drawable/btn_bg"
+                            android:textColor="#FFF43E02"
+                            android:text="#치킨" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/TasteTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="추천메뉴"
+                    android:textSize="30dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="236dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:weightSum="1">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true" />
+
+                    <com.viewpagerindicator.CirclePageIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="200dp"
+                        android:layout_weight="1.72"
+                        android:padding="10dip"
+                        app:centered="true"
+                        app:fillColor="#df0623"
+                        app:pageColor="#fff"
+                        app:snap="false" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="368dp"
+                    android:layout_height="495dp"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteY="8dp"
+                    tools:layout_editor_absoluteX="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="368dp"
+                        android:layout_height="495dp"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="8dp">
+
+                        <RelativeLayout
+                            android:id="@+id/rLayout1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="298dp">
+
+                            <ImageButton
+                                android:id="@+id/AllMenu"
+                                android:layout_width="160dp"
+                                android:layout_height="90dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/menu"
+                                tools:layout_editor_absoluteX="160dp"
+                                tools:layout_editor_absoluteY="200dp" />
+
+                            <TextView
+                                android:id="@+id/Allmenu"
+                                android:layout_width="160dp"
+                                android:layout_height="90dp"
+                                android:gravity="center"
+                                android:text="전체보기"
+                                tools:layout_editor_absoluteX="160dp"
+                                tools:layout_editor_absoluteY="200dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rLayout2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="298dp">
+
+                            <ImageButton
+                                android:id="@+id/KoreanFood"
+                                android:layout_width="160dp"
+                                android:layout_height="90dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/menu"
+                                tools:layout_editor_absoluteX="160dp"
+                                tools:layout_editor_absoluteY="200dp" />
+
+                            <TextView
+                                android:id="@+id/Koreanfood"
+                                android:layout_width="160dp"
+                                android:layout_height="90dp"
+                                android:gravity="center"
+                                android:text="한식"
+                                tools:layout_editor_absoluteX="160dp"
+                                tools:layout_editor_absoluteY="200dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rLayout3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/rLayout1"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="298dp">
+
+                            <ImageButton
+                                android:id="@+id/WesternFood"
+                                android:layout_width="160dp"
+                                android:layout_height="90dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/menu"
+                                tools:layout_editor_absoluteX="160dp"
+                                tools:layout_editor_absoluteY="200dp" />
+
+                            <TextView
+                                android:id="@+id/Westernfood"
+                                android:layout_width="160dp"
+                                android:layout_height="90dp"
+                                android:gravity="center"
+                                android:text="양식"
+                                tools:layout_editor_absoluteX="160dp"
+                                tools:layout_editor_absoluteY="200dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rLayout4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_below="@+id/rLayout2"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="298dp">
+
+                            <ImageButton
+                                android:id="@+id/ChickenFood"
+                                android:layout_width="160dp"
+                                android:layout_height="90dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/menu"
+                                tools:layout_editor_absoluteX="160dp"
+                                tools:layout_editor_absoluteY="200dp" />
+
+                            <TextView
+                                android:id="@+id/Chickenfood"
+                                android:layout_width="160dp"
+                                android:layout_height="90dp"
+                                android:gravity="center"
+                                android:text="치킨"
+                                tools:layout_editor_absoluteX="160dp"
+                                tools:layout_editor_absoluteY="200dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rLayout5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/rLayout3"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="298dp">
+
+                            <ImageButton
+                                android:id="@+id/ChinaFood"
+                                android:layout_width="160dp"
+                                android:layout_height="90dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/menu"
+                                tools:layout_editor_absoluteX="160dp"
+                                tools:layout_editor_absoluteY="200dp" />
+
+                            <TextView
+                                android:id="@+id/Chinafood"
+                                android:layout_width="160dp"
+                                android:layout_height="90dp"
+                                android:gravity="center"
+                                android:text="중국집"
+                                tools:layout_editor_absoluteX="160dp"
+                                tools:layout_editor_absoluteY="200dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rLayout6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_below="@+id/rLayout4"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="298dp">
+
+                            <ImageButton
+                                android:id="@+id/DesertFood"
+                                android:layout_width="160dp"
+                                android:layout_height="90dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/menu"
+                                tools:layout_editor_absoluteX="160dp"
+                                tools:layout_editor_absoluteY="200dp" />
+
+                            <TextView
+                                android:id="@+id/Desertfood"
+                                android:layout_width="160dp"
+                                android:layout_height="90dp"
+                                android:gravity="center"
+                                android:text="분식/디저트"
+                                tools:layout_editor_absoluteX="160dp"
+                                tools:layout_editor_absoluteY="200dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rLayout8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rLayout6"
+                            tools:layout_editor_absoluteX="16dp"
+                            tools:layout_editor_absoluteY="298dp"
+                            android:layout_alignParentStart="true">
+
+                            <ImageButton
+                                android:id="@+id/JapanFood"
+                                android:layout_width="160dp"
+                                android:layout_height="90dp"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/menu"
+                                tools:layout_editor_absoluteX="160dp"
+                                tools:layout_editor_absoluteY="200dp" />
+
+                            <TextView
+                                android:id="@+id/japanfood"
+                                android:layout_width="160dp"
+                                android:layout_height="90dp"
+                                android:gravity="center"
+                                android:text="일식/돈까스"
+                                tools:layout_editor_absoluteX="160dp"
+                                tools:layout_editor_absoluteY="200dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+</FrameLayout>
