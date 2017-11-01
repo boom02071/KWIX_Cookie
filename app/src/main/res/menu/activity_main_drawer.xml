@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="홈화면"></item>
+
+        <item
+            android:id="@+id/search"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="현위치">
+            <item
+                android:id="@+id/map1"
+                android:title="노원구" />
+            <item
+                android:id="@+id/map2"
+                android:title="마포구" />
+        </item>
+        <item
+            android:id="@+id/event"
+            android:icon="@drawable/ic_playlist_add_black_24dp"
+            android:title="카테고리"></item>
+        <item
+            android:id="@+id/game"
+            android:icon="@drawable/ic_casino_black_24dp"
+            android:title="랜덤게임" />
+
+    </group>
+
+
+</menu>

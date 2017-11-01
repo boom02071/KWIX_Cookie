@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "C:\\Users\\Hyun\\Desktop\\map2\\maps.android-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 63,
+                    "endOffset": 114
+                },
+                "from": {
+                    "file": "C:\\Users\\Hyun\\Desktop\\map2\\maps.android-master\\app\\src\\main\\res\\values-v11\\styles.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 1,
+                        "startOffset": 53,
+                        "endColumn": 60,
+                        "endOffset": 112
+                    }
+                }
+            }
+        ]
+    }
+]
