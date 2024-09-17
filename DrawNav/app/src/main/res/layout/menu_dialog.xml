@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:paddingBottom="30dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="#FFF8E2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="0.08"
+        android:orientation="horizontal"
+        android:background="#FFA900"
+        android:weightSum="1"
+        >
+
+        <TextView
+            android:id="@+id/shopname"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="가게이름"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_weight="0.97"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text=" X "
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:background="#FFA900"
+        android:layout_gravity="center"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/foodname"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="음식이름"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_weight="0.76"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="3500"
+            android:layout_gravity="center"
+            android:layout_weight="0.20" />
+        <TextView
+            android:id="@+id/won"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="원"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/hash1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="해쉬태그1"
+            android:background="#2CA4BF"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            style="?android:attr/ratingBarStyleIndicator"
+            />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="평점"
+            android:textSize="15dp"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="1">
+
+
+        <Button
+            android:id="@+id/hash2"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="해쉬태그1"
+            android:background="#2CA4BF"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            style="?android:attr/ratingBarStyleIndicator"
+            />
+
+        <TextView
+            android:id="@+id/score2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="평점"
+            android:textSize="15dp"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/morebtn"
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="36dp"
+        android:background="#FFA900"
+        android:text="상세보기"
+        android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>
